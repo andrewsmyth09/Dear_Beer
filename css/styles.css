@@ -1,0 +1,125 @@
+/* DEFAULT STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav, button, footer, #welcome {
+    background-color: black;
+    color: white;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+span {
+    color: orange;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* END OF DEFAULT STYLES */
+
+/* CONTAINERS */
+
+header {
+    height: 20em;
+}
+
+main {
+    width: 97%;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+/* HEADER SECTION */
+
+
+.menu li {
+    display: inline;
+    color: white;
+    padding: 0 0.7em;
+}
+
+.menu li a {
+    color: white;
+}
+
+nav {
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-between;
+}
+
+#welcome {
+    background-image: url('/img/header/beer_tap_au.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 100%;
+    height: 100%;
+    text-shadow: 2px 2px black;
+}
+
+.info {
+    width: 90%;
+    margin: auto;
+    padding-top: 3em;
+    line-height: 3em;
+}
+
+.info button {
+    width: 30%;
+    height: 20%;
+    position: relative;
+    left: 35%;
+    padding: 0.5em;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 0.5em;
+}
+
+/* MAP SECTION */
+
+#map {
+    width: 100%;
+    height: auto;
+    margin-top: 5em;
+    line-height: 2em;
+}
+
+#map p {
+    padding: 0 1em;
+}
+
+iframe {
+    width: 100%;
+    height: 20em;
+}
+
+/* GALLERY SECTION */
+
+img {
+    width: 100%;
+}
+
+/* BEER BRAND SECTION */
+
+.brand img {
+    height: 15em;
+}
+
+
+/* Media Queries */
+@media (max-width: 600px) {
+    #welcome {
+        background-image: url('/img/header/beer_tap.jpg');
+    }
+}
