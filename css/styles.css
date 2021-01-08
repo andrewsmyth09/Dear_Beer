@@ -28,6 +28,7 @@ span {
 
 header {
     height: 20em;
+    padding-bottom: 4em;
 }
 
 main {
@@ -39,11 +40,22 @@ footer {
     text-align: center;
 }
 
+/* HOVER LINKS */
+
+nav:hover .menu {
+    display: block;
+}
+
+.menu li:hover {
+    border-bottom: 1px solid wheat;
+    font-weight: bold;
+}
+
 /* HEADER SECTION */
 
 
 .menu li {
-    display: inline;
+    /* display: inline; */
     color: white;
     padding: 0 0.7em;
 }
@@ -52,10 +64,17 @@ footer {
     color: white;
 }
 
+.menu {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
 nav {
     display: flex;
     padding: 0.5em;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #welcome {
@@ -91,7 +110,7 @@ nav {
 #map {
     width: 100%;
     height: auto;
-    margin-top: 5em;
+    margin-top: 4em;
     line-height: 2em;
 }
 
@@ -110,10 +129,26 @@ img {
     width: 100%;
 }
 
+.main_gallery img {
+    height: 40em;
+}
+
 /* BEER BRAND SECTION */
 
 .brand img {
     height: 15em;
+}
+
+/* TEAM SECTION */
+
+#team {
+    margin-bottom: 1em;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    padding: 1em;
 }
 
 
@@ -121,5 +156,68 @@ img {
 @media (max-width: 600px) {
     #welcome {
         background-image: url('/img/header/beer_tap.jpg');
+    }
+}
+
+@media (min-width: 600px) {
+    #beer_brand {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .brand {
+        width: 50%;
+    }
+
+    #team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .staff {
+        width: 49.5%;
+    }
+
+    .menu_mobile {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        width: 50%;
+    }
+
+    .menu li {
+        display: inline;
+    }
+}
+
+@media (min-width: 700px) {
+    .upper_gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .upper_gallery .img_1, .img_2 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 800px) {
+    .upper_gallery .img_1, .img_2, .img_3 {
+        width: 33.3%;
+    }
+
+    .staff {
+        width: 33.3%;
+    }
+
+    .brand {
+        width: 35%;
+    }
+
+    main {
+        width: 80%;
     }
 }

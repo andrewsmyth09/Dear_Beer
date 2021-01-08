@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* .menu li {
+            padding: 0.5em;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        p {
+            color: red;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        p:hover+.menu {
+            display: block;
+        }
+
+        .menu {
+            display: none;
+        } */
+
+       
+
+        .menu {
+            text-align: center;
+            width: 100%;
+            display: none;
+        }
+
+        .menu li {
+            padding: 0.5em;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+      nav {
+          display: flex;
+          flex-wrap: wrap;
+          height: 200px;
+          background-color: grey;
+          color: white;
+          justify-content: space-between;
+
+      }
+
+      .menu_mobile:hover + .menu {
+          display: block;
+      }
+
+
+        .flex-test {
+            width: 100%;
+            background-color: grey;
+            display: flex;
+            flex-wrap: wrap;
+            height: 200px;
+        }
+
+        .box {
+            width: 49%;
+            /* height: 20%; */
+            background: green;
+            margin:  0 auto;
+            height: auto;
+        }
+
+        .box_2 {
+            background: yellow;
+        }
+
+        .box_3 {
+            background-color: blue;
+            display: none;
+        }
+
+        .box_2:hover + .box_3 {
+            display: block;
+        }
+
+        @media (max-width: 500px) {
+            .box_2 {
+                display: none;
+            }
+
+            .box_3 {
+                display: block;
+            }
+
+            .menu_mobile {
+                display: none;
+            }
+
+            .menu {
+                display: inline;
+                width: 80%;
+            }
+
+            .menu li {
+                display: inline;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="nav_2">
+        <p>&darr;</p>
+        <ul class="menu">
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Beer</a></li>
+            <li><a href="#">Team</a></li>
+        </ul>
+    </div> -->
+
+    <!-- <nav>
+        <div class="nav_1">
+            <h3>Dear Beer</h3>
+            <p>Menu</p>
+        </div>
+        <div class="nav_2">
+            <ul class="menu">
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Beer</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <nav>
+        <h3 class="logo">Dear Beer</h3>
+            <p class="menu_mobile">Menu</p>
+            <ul class="menu">
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Beer</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+    </nav>
+
+    <div class="flex-test">
+        <div class="box"></div>
+        <div class="box box_2"></div>
+        <div class="box box_3"></div>
+    </div>
+</body>
+
+</html>
