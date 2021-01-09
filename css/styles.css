@@ -105,6 +105,11 @@ nav {
     border-radius: 0.5em;
 }
 
+.info button:hover {
+    border: 4px solid white;
+    
+}
+
 /* MAP SECTION */
 
 #map {
@@ -187,10 +192,15 @@ footer {
     .menu {
         display: block;
         width: 50%;
+        text-align: right;
     }
 
     .menu li {
         display: inline;
+    }
+
+    header {
+        padding-bottom: 0;
     }
 }
 
