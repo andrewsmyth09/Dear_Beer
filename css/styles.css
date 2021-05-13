@@ -78,7 +78,7 @@ nav {
 }
 
 #welcome {
-    background-image: url('/img/header/beer_tap_au.jpg');
+    background-image: url('img/header/beer_tap_au.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
